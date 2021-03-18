@@ -28,7 +28,8 @@ class PostController extends Controller
 
     public function index()
     {
-
+        $posts = Post::latest()->paginate(2);
+        return responseOK($posts);
     }
 
     public function create()

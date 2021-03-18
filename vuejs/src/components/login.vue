@@ -26,7 +26,7 @@
 </template>
 
 <script>
-const axios = require('axios').default;
+import base_request from "@/components/base_request";
 export default {
   data() {
     return {
@@ -41,7 +41,7 @@ export default {
   methods: {
     login: function () {
       this.loading = true
-      axios.post('http://localhost:8000/api/login', this.user)
+      base_request.post('login', this.user)
           .then(response => {
             window.localStorage.setItem('token', response.data.token)
             this.$router.push({name: 'dashboard'})

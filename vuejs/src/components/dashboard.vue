@@ -13,7 +13,7 @@
         <div class="form-group">
           <label for="exampleInputPassword2">Content</label>
           <textarea v-model="post.content" type="text" name="content" class="form-control"
-                 :class="{'is-invalid' : errors.content}" rows="10"
+                    :class="{'is-invalid' : errors.content}" rows="10"
                     id="exampleInputPassword2"></textarea>
           <div v-if="errors.content" class="invalid-feedback">{{ errors.content[0] }}</div>
         </div>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-const axios = require('axios').default;
+import base_request from "@/components/base_request";
 export default {
   data() {
     return {
@@ -43,14 +43,7 @@ export default {
   },
   methods: {
     checkLoggedIn: function () {
-      let token = window.localStorage.getItem('token')
-      if (!token) {
-        this.$router.push({name: 'login'})
-      }
-      axios.get('http://localhost:8000/api/user',
-          {
-            headers: {'Authorization': 'Bearer ' + token}
-          })
+      base_request.get('user')
           .then(function (response) {
             // handle success
             console.log(response);
@@ -64,17 +57,9 @@ export default {
     },
     createPost: function () {
       this.loading = true
-      let token = window.localStorage.getItem('token')
-      if (!token) {
-        this.$router.push({name: 'login'})
-      }
-      axios.post(
-          'http://localhost:8000/api/post',
-          this.post,
-          {
-            headers: {'Authorization': 'Bearer ' + token}
-          })
-          .then(() => {
+      base_request.post('post', this.post)
+          .then((res) => {
+            console.log(res)
             alert('Tạo bài viết thành công!')
             this.post = {
               'title': '',

@@ -14,10 +14,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Login from './components/login'
 import Register from './components/register'
 import Dashboard from './components/dashboard'
+import Home from './components/Home'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 const routes = [
+  { path: '/', component: Home, name: 'home' },
   { path: '/login', component: Login, name: 'login' },
   { path: '/register', component: Register },
   { path: '/dashboard', component: Dashboard, name: 'dashboard' },

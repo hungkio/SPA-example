@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0a64011-d3d9-4a05-9332-da7becda3b24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vuejs/src/components/dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuejs/src/components/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuejs/src/components/register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs/src/components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs/src/components/base_request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuejs/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuejs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuejs/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs/src/components/dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs/src/components/dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs/src/components/login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuejs/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
